@@ -2,12 +2,12 @@
 // Output: Sorted input list
 
 // Sample Output:
-// mergeSort([6, 3, 2, 1, 5, 4]) => [1, 2, 3, 4, 5, 6]
+// insersionSort([6, 3, 2, 1, 5, 4]) => [1, 2, 3, 4, 5, 6]
 // Invalid / Empty inputs:
-// mergeSort([]) => []
-// mergeSort() => null
-// mergeSort([null]) => null
-// mergeSort([6, 'A', 2, ' ', 5, null, undefined]) => null
+// insersionSort([]) => []
+// insersionSort() => null
+// insersionSort([null]) => null
+// insersionSort([6, 'A', 2, ' ', 5, null, undefined]) => null
 
 
 // Time Complexity: n^2
@@ -19,7 +19,7 @@ function swap(i, j, input) {
   input[j] = temp
 }
 
-function mergeSort(input) {
+function insersionSort(input) {
   if (!input || !Array.isArray(input)) {
     return null
   }
@@ -37,7 +37,7 @@ function mergeSort(input) {
 
 
 // Ex 2.1-2 : Reverse Insersion Sort
-function mergeSort(input) {
+function reverseInsersionSort(input) {
   if (!input || !Array.isArray(input)) {
     return null
   }
